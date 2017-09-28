@@ -1,0 +1,292 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TEST.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TEST.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 TEST"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TEST 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TEST_DIALOG DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "TEST"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,17,15,212,27,ES_RIGHT | ES_AUTOHSCROLL,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "7",IDC_BUTTON1,20,49,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "8",IDC_BUTTON2,70,49,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "9",IDC_BUTTON3,120,49,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "4",IDC_BUTTON4,20,70,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "5",IDC_BUTTON5,70,70,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "6",IDC_BUTTON6,120,70,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "1",IDC_BUTTON7,20,89,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "2",IDC_BUTTON8,70,89,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "3",IDC_BUTTON9,120,89,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "0",IDC_BUTTON10,20,110,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      ".",IDC_BUTTON11,70,110,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "=",IDC_BUTTON12,120,110,45,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "+",IDC_BUTTON13,170,49,18,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "-",IDC_BUTTON14,170,70,18,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "*",IDC_BUTTON15,170,89,18,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "/",IDC_BUTTON16,170,110,18,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "AC",IDC_BUTTON17,193,49,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "(",IDC_BUTTON18,193,70,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      ")",IDC_BUTTON19,193,89,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "D&el",IDC_BUTTON20,193,110,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&&",IDC_BUTTON21,230,49,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "^",IDC_BUTTON22,230,70,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "|",IDC_BUTTON23,230,89,30,15,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "Return",IDC_BUTTON24,230,110,30,15,BS_CENTER | 
+                    BS_VCENTER,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "TEXT UPDATE",IDC_BUTTON25,237,15,61,26,BS_CENTER | 
+                    BS_VCENTER,WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "sin",IDC_BUTTON26,20,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "cos",IDC_BUTTON27,62,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "tan",IDC_BUTTON28,104,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "asin",IDC_BUTTON29,146,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "acos",IDC_BUTTON30,188,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "atan",IDC_BUTTON31,230,130,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CTEXT           "Welcome!",IDC_STATIC,268,129,45,21,SS_CENTERIMAGE | 
+                    WS_BORDER,WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,275,156,20,20
+    CONTROL         "二进制",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,261,52,40,10,WS_EX_TRANSPARENT
+    CONTROL         "八进制",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,261,72,40,10,WS_EX_TRANSPARENT
+    CONTROL         "十进制",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,261,92,40,10,WS_EX_TRANSPARENT
+    CONTROL         "十六进制",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,261,114,48,10,WS_EX_TRANSPARENT
+    PUSHBUTTON      "A",IDC_BUTTON32,20,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "B",IDC_BUTTON33,62,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "C",IDC_BUTTON34,104,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "D",IDC_BUTTON35,146,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "E",IDC_BUTTON36,188,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    PUSHBUTTON      "F",IDC_BUTTON37,230,155,30,20,BS_CENTER | BS_VCENTER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+    CTEXT           "说明:转换进制时算式不变 =进行相应进制下的计算 文本输入需要TEXT UPDATE",
+                    IDC_STATIC,7,176,261,11,SS_CENTERIMAGE | WS_BORDER,
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TEST Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TEST\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TEST.EXE\0"
+            VALUE "ProductName", "TEST 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TEST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 193
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 TEST(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\TEST.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
