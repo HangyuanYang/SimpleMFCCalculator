@@ -75,98 +75,148 @@ graph BT
 
 ## 文件和对象描述
 
-* 计算器内核的函数设置：
+计算器内核的函数设置：
 
 ```c++
 public:
 	calculator(string&a,int base);//初始化计算器
-    calculator(CString&a,int base):infix(a.GetBuffer(a.GetLength()));//初始化计算器
+	calculator(CString&a,int base):infix(a.GetBuffer(a.GetLength()));//初始化计算器
 	void setinfix(string);//设置中缀表达式
 	string getinfix();    //获取
 	void setanswer(double=0);//设置答案
 	CString getanswer();//获取答案
-    void setisexception(int=0);//isexception设置函数
-    int getisexception();//isexception取值函数
-    double turnnumber(string);//转换数字
+	void setisexception(int=0);//isexception设置函数
+	int getisexception();//isexception取值函数
+	double turnnumber(string);//转换数字
 
 	bool isnumber(char);//判断是否为数字
 	int priority(char);//运算符优先级函数
 
-    void setsuffix();//求逆波兰表达式
+	void setsuffix();//求逆波兰表达式
 	void calculate();//求解逆波兰表达式的值
 	void operate();//求逆波兰表达式并求值
 	void modify();//计算结果进制转换
-    static const string iexcept[5];//静态常量异常类型
+	static const string iexcept[5];//静态常量异常类型
 	static const int basenumber[4];//静态基数
 
 private:
-  string infix;//存储原始计算式
-  vector<string>suffix;//存储后缀表达式
-  stack<string>operation;//运算符栈
-  stack<double>calcul;//计算结果栈
-  string ansstring;//答案信息
-  int isexception;//判断是否有异常
-  double answer;//存储数值结果
-  int bas;//基数
+	string infix;//存储原始计算式
+	vector<string>suffix;//存储后缀表达式
+	stack<string>operation;//运算符栈
+	stack<double>calcul;//计算结果栈
+	string ansstring;//答案信息
+	int isexception;//判断是否有异常
+	double answer;//存储数值结果
+	int bas;//基数
 ```
 
-* TestDlg中负责对话框响应函数的处理:
+TestDlg中负责对话框响应函数的处理:
 
-  //{{AFX_MSG(CTESTDlg)
-  virtual BOOL OnInitDialog();
-  afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
-  afx_msg void OnPaint();
-  afx_msg HCURSOR OnQueryDragIcon();
-  afx_msg void OnPress1();//添加7
-  afx_msg void OnPress2();//添加8
-  afx_msg void OnPress3();//添加9
-  afx_msg void OnPress4();//添加4
-  afx_msg void OnPress5();//添加5
-  afx_msg void OnPress6();//添加6
-  afx_msg void OnPress7();//添加1
-  afx_msg void OnPress8();//添加2
-  afx_msg void OnPress9();//添加3
-  afx_msg void OnPress10();//添加0
-  afx_msg void OnPress11();//添加.
-  afx_msg void OnPress12();//=计算算式结果
-  afx_msg void OnPress13();//添加+
-  afx_msg void OnPress14();//添加-
-  afx_msg void OnPress15();//添加*
-  afx_msg void OnPress16();//添加/
-  afx_msg void OnPress17();//添加AC
-  afx_msg void OnPress18();//添加{
-  afx_msg void OnPress19();//添加}
-  afx_msg void OnPress20();//添加Del
-  afx_msg void OnPress21();//添加&
-  afx_msg void OnPress22();//添加^
-  afx_msg void OnPress23();//添加|
-  afx_msg void OnPress24();//Return返回上一个算式
-  afx_msg void OnPress25();//TEXT UPDATE将文本输入内容更新到算式中 
-  afx_msg void OnPress26();//sin添加sin(
-  afx_msg void OnPress27();//cos添加cos(
-  afx_msg void OnPress28();//tan添加tan(
-  afx_msg void OnPress29();//asin添加asin(
-  afx_msg void OnPress30();//acos添加acos(
-  afx_msg void OnPress31();//atan添加atan(
-  afx_msg void OnRadio1();//进制选择同时完成对应进制下的计算
-  afx_msg void OnPress32();//添加A
-  afx_msg void OnPress33();//添加B
-  afx_msg void OnPress34();//添加C
-  afx_msg void OnPress35();//添加D
-  afx_msg void OnPress36();//添加E
-  afx_msg void OnPress37();//添加F
-  //}}AFX_MSG
+```c++
+//{{AFX_MSG(CTESTDlg)
+
+virtual BOOL OnInitDialog();
+
+afx_msg void OnSysCommand(UINT nID, LPARAM lParam);
+
+afx_msg void OnPaint();
+
+afx_msg HCURSOR OnQueryDragIcon();
+
+afx_msg void OnPress1();//添加7
+
+afx_msg void OnPress2();//添加8
+
+afx_msg void OnPress3();//添加9
+
+afx_msg void OnPress4();//添加4
+
+afx_msg void OnPress5();//添加5
+
+afx_msg void OnPress6();//添加6
+
+afx_msg void OnPress7();//添加1
+
+afx_msg void OnPress8();//添加2
+
+afx_msg void OnPress9();//添加3
+
+afx_msg void OnPress10();//添加0
+
+afx_msg void OnPress11();//添加.
+
+afx_msg void OnPress12();//=计算算式结果
+
+afx_msg void OnPress13();//添加+
+
+afx_msg void OnPress14();//添加-
+
+afx_msg void OnPress15();//添加*
+
+afx_msg void OnPress16();//添加/
+
+afx_msg void OnPress17();//添加AC
+
+afx_msg void OnPress18();//添加{
+
+afx_msg void OnPress19();//添加}
+
+afx_msg void OnPress20();//添加Del
+
+afx_msg void OnPress21();//添加&
+
+afx_msg void OnPress22();//添加^
+
+afx_msg void OnPress23();//添加|
+
+afx_msg void OnPress24();//Return返回上一个算式
+
+afx_msg void OnPress25();//TEXT UPDATE将文本输入内容更新到算式中 
+
+afx_msg void OnPress26();//sin添加sin(
+
+afx_msg void OnPress27();//cos添加cos(
+
+afx_msg void OnPress28();//tan添加tan(
+
+afx_msg void OnPress29();//asin添加asin(
+
+afx_msg void OnPress30();//acos添加acos(
+
+afx_msg void OnPress31();//atan添加atan(
+
+afx_msg void OnRadio1();//进制选择同时完成对应进制下的计算
+
+afx_msg void OnPress32();//添加A
+
+afx_msg void OnPress33();//添加B
+
+afx_msg void OnPress34();//添加C
+
+afx_msg void OnPress35();//添加D
+
+afx_msg void OnPress36();//添加E
+
+afx_msg void OnPress37();//添加F
+
+//}}AFX_MSG
+```
+
+
+
+
+
 ## 测试报告
 
-* 主要通过不同进制下的运算结果来进行测试：
+主要通过不同进制下的运算结果来进行测试：
 
-  十进制算式:
+十进制算式:
 
-  ![img](/calculator6.0/screenshots/十.bmp)
+![img](/calculator6.0/screenshots/十.bmp)
 
-  运算结果:
+运算结果:
 
-  ![img](/calculator6.0/screenshots/十ans.bmp)
+![img](/calculator6.0/screenshots/十ans.bmp)
 
 二进制算式：
 
